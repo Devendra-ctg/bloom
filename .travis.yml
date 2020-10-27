@@ -1,5 +1,8 @@
 language: go
 sudo: false
+arch:
+  - AMD64
+  - ppc64le
 before_script:
 - go get -t ./...
 - go vet ./...
